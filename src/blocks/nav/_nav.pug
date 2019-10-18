@@ -1,18 +1,9 @@
-include ../logo/_logo.pug
-
 mixin nav
     nav.nav
-        +logo.nav__logo
         ul.nav__list
-            li.nav__item.nav__item--active
-                a(href="javascript:void(0)").nav__link HOME
-            li.nav__item
-                a(href="javascript:void(0)").nav__link ABOUT
-            li.nav__item
-                a(href="javascript:void(0)").nav__link SERVICES
-            li.nav__item
-                a(href="javascript:void(0)").nav__link GALLERY
-            li.nav__item
-                a(href="javascript:void(0)").nav__link BLOG
-            li.nav__item
-                a(href="javascript:void(0)").nav__link CONTACT
+            each val in ['About Me','Services','My Works','Clients']
+                li.nav__item
+                    a(href="javascript:void(0)").nav__link= val
+        hr.nav__devider
+        ul.nav__social
+            

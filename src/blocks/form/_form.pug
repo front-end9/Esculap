@@ -1,0 +1,15 @@
+mixin form
+    .form
+        form(action="", method="get")
+            +input('Your Name')
+            +input('Your E-Mail')
+            +input('Your Message', true)
+            .form__submit
+                +btn('SEND MESSAGE', 'submit')
+
+mixin input(placeholder, mod)
+    .form__field
+        if mod
+            textarea(placeholder=placeholder).form__input.form__input--textarea
+        else
+            input(type="text", placeholder=placeholder).form__input

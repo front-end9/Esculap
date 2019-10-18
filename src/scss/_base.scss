@@ -1,3 +1,30 @@
+$font: 'Lato', sans-serif;
+
 html {
-    font-family: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(../Eskulap.jpg);
+    background-position: top;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.text {
+    &-left {
+        text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
 }

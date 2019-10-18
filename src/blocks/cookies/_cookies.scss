@@ -1,0 +1,14 @@
+.cookies {
+    background-color: #194277;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+
+    &__text {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-right: 45px;
+    }
+}

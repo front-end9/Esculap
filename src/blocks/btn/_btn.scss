@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    align-self: center;
+
+    color: #194277;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 9px 37px;
+
+    &--big {
+        color: #3695ff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        border-radius: 28px;
+        padding: 13px 70px;
+    }
+
+    &--submit {
+        background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+        border-radius: 28px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+}

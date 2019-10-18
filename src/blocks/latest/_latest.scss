@@ -1,0 +1,15 @@
+.latest {
+    padding: 93px 0 130px;
+    background-color: white;
+
+    &__title {
+        margin-bottom: 95px;
+    }
+
+    &__panel {
+        background-color: #f4f4f4;
+        border: 1px solid #f4f4f4;
+        border-radius: 10px;
+        margin-bottom: 54px;
+    }
+}

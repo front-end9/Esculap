@@ -1,0 +1,13 @@
+mixin expert
+    .expert
+        .container
+            +title('Expert In').expert__title
+            .expert__items
+                .row
+                    each val, index in ['MOBILE APP DESIGN', 'WEB DESIGN', 'WEB DEVELOPMENT', 'PRODUCT DESIGN', 'UX & UI', 'ANIMATIONS']
+                        .col-12.col-md-6.col-lg-4
+                            .expert__item
+                                .expert__icon
+                                    img(src=`./img/icon${index}.png`, alt="")
+                                h3.expert__in= val
+                                p.expert__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim 
