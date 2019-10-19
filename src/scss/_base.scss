@@ -1,13 +1,14 @@
-$font: 'Lato', sans-serif;
+$font: 'Lato',
+sans-serif;
 
 html {
     font-family: 'Lato', sans-serif;
 }
 
-body {
-    background-image: url(../Eskulap.jpg);
-    background-position: top;
-}
+// body {
+//     background-image: url(../Eskulap.jpg);
+//     background-position: top;
+// }
 
 @media (min-width: 1200px) {
     .container {
