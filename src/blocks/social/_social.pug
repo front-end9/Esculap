@@ -1,0 +1,7 @@
+mixin social
+    .social&attributes(attributes)
+        ul.social__list
+            each val in ['facebook-f', 'twitter', 'dribbble', 'behance']
+                li.social__item
+                    a(href="javascript:void(0)").social__link
+                        i(class=`fa-${val}`).fab

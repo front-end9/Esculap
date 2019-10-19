@@ -18,6 +18,10 @@
         width: 100%;
         padding: 5px 15px;
 
+        &:focus {
+            border-color: #3695ff;
+        }
+
         &--textarea {
             min-height: 182px;
             resize: none;

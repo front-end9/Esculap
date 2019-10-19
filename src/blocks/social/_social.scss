@@ -1,0 +1,28 @@
+.social {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0 14px;
+    }
+
+    &__link {
+        width: 51px;
+        height: 51px;
+        background-color: #e1e1e1;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        &:hover {
+            background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+        }
+    }
+}

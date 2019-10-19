@@ -12,7 +12,13 @@
     line-height: 1;
     background-color: white;
     border-radius: 15px;
-    padding: 9px 37px;
+    padding: 8px 36px;
+    border: 1px solid white;
+
+    &:hover {
+        background-color: #194277;
+        color: white;
+    }
 
     &--big {
         color: #3695ff;
@@ -32,5 +38,11 @@
         font-weight: 700;
         line-height: 30px;
         text-transform: uppercase;
+
+        &:hover {
+            color: #3695ff;
+            background: white;
+            border-color: #3695ff;
+        }
     }
 }

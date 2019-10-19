@@ -15,6 +15,7 @@
         line-height: 60px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        letter-spacing: .025em;
     }
 
     &__subtitle {
@@ -24,9 +25,20 @@
         line-height: 35px;
         text-transform: uppercase;
         margin-bottom: 66px;
+        letter-spacing: .025em;
     }
 
     &__arrow {
         margin-top: 93px;
+    }
+
+    &__nav {
+        width: 42px;
+        height: 42px;
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        top: -68px;
+        right: -90px;
     }
 }
