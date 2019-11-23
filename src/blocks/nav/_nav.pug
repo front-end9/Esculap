@@ -1,9 +1,9 @@
-mixin nav
+mixin nav(params)
     nav.nav
         ul.nav__list
-            each val in ['About Me','Services','My Works','Clients']
+            each val in params
                 li.nav__item
-                    a(href="javascript:void(0)").nav__link= val
+                    a(href=`#${val.link}`).nav__link= val.text
         hr.nav__devider
         +social.nav__social
             

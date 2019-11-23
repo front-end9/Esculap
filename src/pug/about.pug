@@ -1,9 +1,8 @@
 extends ./_template.pug
 
+block header
+    +welcome
 block main
-    +about
     +expert(data.expert)
+    +about
     +latest
-    +clients
-    +hire
-    +modal

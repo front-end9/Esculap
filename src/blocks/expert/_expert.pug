@@ -1,10 +1,10 @@
-mixin expert
-    .expert
+mixin expert(params)
+    .expert#services
         .container
-            +title('Expert In').expert__title
+            +title(params.title).expert__title
             .expert__items
                 .row
-                    each val, index in ['MOBILE APP DESIGN', 'WEB DESIGN', 'WEB DEVELOPMENT', 'PRODUCT DESIGN', 'UX & UI', 'ANIMATIONS']
+                    each val, index in params.titles
                         .col-12.col-md-6.col-lg-4
                             .expert__item
                                 .expert__icon

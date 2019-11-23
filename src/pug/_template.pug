@@ -1,0 +1,33 @@
+include ./_data.pug
+include ../blocks/nav/_nav.pug
+include ../blocks/title/_title.pug
+include ../blocks/cookies/_cookies.pug
+include ../blocks/btn/_btn.pug
+include ../blocks/welcome/_welcome.pug
+include ../blocks/about/_about.pug
+include ../blocks/expert/_expert.pug
+include ../blocks/latest/_latest.pug
+include ../blocks/clients/_clients.pug
+include ../blocks/hire/_hire.pug
+include ../blocks/modal/_modal.pug
+include ../blocks/form/_form.pug
+include ../blocks/social/_social.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="../node_modules/remodal/dist/remodal.css")
+        link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        block header
+            +cookies(data.cookies)
+            +welcome
+        block main
+        <script src="https://kit.fontawesome.com/13fd77a47d.js" crossorigin="anonymous"></script>
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src="../node_modules/remodal/dist/remodal.js")
