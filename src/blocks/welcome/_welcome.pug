@@ -1,16 +1,14 @@
-mixin welcome
+mixin welcome(welcome)
     .welcome
         .container
             .row
                 .col-12.col-lg-10.offset-lg-1
                     .welcome__logo
-                        img(src="./img/logo.png", alt="")
-                    h1.welcome__title free portfolio PSD template 
-                        br
-                        | FOR GRAPHIC designerS
-                    p.welcome__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    +btn('hire me', 'big')(href="#hire")
+                        img(src=welcome.logo, alt="")
+                    h1.welcome__title!= welcome.title
+                    p.welcome__subtitle= welcome.subtitle
+                    +btn(welcome.btn.text, welcome.btn.mod)(href=welcome.btn.href)
                     .welcome__arrow
-                        img(src="./img/arrow__bottom.png", alt="")
+                        img(src=welcome.arrow, alt="")
                     a.welcome__nav(href="#menu")
                         <i class="fas fa-bars"></i>

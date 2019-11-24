@@ -1,10 +1,10 @@
-mixin expert(params)
+mixin expert(expert)
     .expert#services
         .container
-            +title(params.title).expert__title
+            +title(expert.title).expert__title
             .expert__items
                 .row
-                    each val, index in params.titles
+                    each val, index in expert.titles
                         .col-12.col-md-6.col-lg-4
                             .expert__item
                                 .expert__icon
